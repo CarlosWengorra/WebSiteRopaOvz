@@ -1,0 +1,17 @@
+@import url(./css/general.css);
+@import url(./css/index.css);
+@import url(./css/nosotros.css);
+@import url(./css/productos.css);
+@import url(./css/contactos.css);
+@import url(./css/devoluciones.css);
+@import url(./css/envios.css);
+
+
+.movimiento {
+    transform: translateX(50px); /* Cambia el valor según el tipo de movimiento deseado */
+    transition: transform 0.5s ease; /* Agrega una transición para un efecto suave */
+}
+
+.oculto {
+    display: none;
+}

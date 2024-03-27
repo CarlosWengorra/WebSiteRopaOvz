@@ -1,0 +1,88 @@
+/* producto.css */
+
+.producto-total {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    gap: 20px;
+    padding: 20px; /* Agregar un espacio interno */
+    box-sizing: border-box; /* Asegurar que el padding no aumente el ancho total */
+}
+
+.producto {
+    text-align: center;
+    height: 100%; /* Para que flexbox funcione correctamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para centrar el contenido verticalmente */
+}
+
+.oculto {
+    display: none;
+}
+
+.add {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.consideraciones {
+    border: 1px gray solid;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.img-cont {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 400px; /* Establece una altura máxima para todas las imágenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Permite que margin: 0 auto; funcione correctamente */
+    border: none; /* Elimina el borde alrededor de la imagen */
+}
+
+
+.h2 {
+    margin-top: 0; /* Eliminar el margen superior predeterminado del título */
+}
+
+.p {
+    margin-bottom: 0; /* Eliminar el margen inferior predeterminado del párrafo */
+}
+.tarjeta {
+    width: calc(50% - 60px); /* Ancho del 50% menos el espacio entre elementos */
+  
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 50px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.descripcion {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .producto-total {
+        padding: 10px; /* Reducir el espacio interno en dispositivos móviles */
+    }
+    .producto {
+        width: calc(50% - 10px); /* Ancho del 50% menos el espacio entre elementos */
+        margin-bottom: 20px; /* Agregar un espacio entre elementos en dispositivos móviles */
+    }
+    .tarjeta {
+        width: calc(50% - 10px); /* Ancho del 50% menos el espacio entre elementos */
+        margin-bottom: 20px; /* Agregar un espacio entre elementos en dispositivos móviles */
+    }
+}

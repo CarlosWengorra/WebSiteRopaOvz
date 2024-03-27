@@ -1,0 +1,22 @@
+
+.enivos-url {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.envios-container {
+    font-size: 20px;
+}
+
+.parrafo {
+    font-size: 16px;
+}
+
+.envios {
+    margin: 0;
+    font-size: 30px;
+}
+

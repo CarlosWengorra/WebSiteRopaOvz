@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.img-container{ 
+    text-align: center;
+}
+
+.caja-total{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+}
+.caja-primaria{
+    width: 50%;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.caja-secundaria{
+    width: 50%;
+    margin-right: 200px;
+    padding: 20px;
+}
+
+.text-1{
+    text-align: justify;
+}
+
+.h3-contenedor{
+    font-style: italic ;
+    font-size: 24px !important;
+}
+
+.h2-contenedor{
+    color: rgb(18, 143, 35) !important;
+    font-size: 40px ;
+    font-weight: 600 ;
+    margin-top: 15px ;
+    text-align: center;
+}
+
+
+@keyframes movimiento-texto {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a los elementos de texto */
+.animar-texto {
+    animation: movimiento-texto 1s ease-out;
+}
+
+
+@media (max-width: 768px){
+    .img-container{
+        width: 95vw;
+    }
+    .img-container{
+        width: 80%;
+    }
+    .caja-total{
+        display: flex;
+        flex-direction: column;
+    }
+    .caja-secundaria{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 390px){
+    .sector-completo{
+        align-items: center;
+    }
+    .img-container{
+        width: 90vw;
+    }
+    .img-container img{
+        max-width: 95%;
+    }
+    .caja-total{
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-primaria{
+        align-items: center;
+        max-width: 90vw;
+        width: 80%;
+        margin: 10%;
+    }
+
+    .caja-secundaria{
+        max-width: 90vw;
+        width: 80%;
+        padding: 0px;
+        margin: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px){
+    .img-container{
+        width: 90vw;
+    }
+    .img-container img{
+        max-width: 95%;
+    }
+    .caja-total{
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .caja-primaria{
+        align-items: center;
+        max-width: 90vw;
+        width: 80%;
+        margin: 10%;
+    }
+
+    .caja-secundaria{
+        max-width: 90vw;
+        width: 80%;
+        padding: 0px;
+        margin: 10px;
+        align-items: center;
+    }
+}
+
+

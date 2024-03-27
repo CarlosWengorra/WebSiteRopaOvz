@@ -1,0 +1,59 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto; 
+    min-width: 300px;
+}
+
+/* HEADER */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    min-width: 300px;
+
+}
+
+.navbar-toggler{
+    background-color: white !important;
+    margin-right: 150px;
+    width: 30px;
+}
+.bg-nav, .dropdown-menu.show{
+    background-color: #333;
+}
+
+a {
+    color: white !important;
+}
+a:hover, a:focus {
+    background-size: 100% 2px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* COSAS EN TODOS LOS CSS */
+
+h1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+
